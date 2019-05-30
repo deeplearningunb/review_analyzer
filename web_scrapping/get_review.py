@@ -1,15 +1,20 @@
 from bs4 import BeautifulSoup
 import requests
 import csv
+import os
 
 class ReviewScrapper:
     
     def get_page(self,url):
         aux = 1
         csv_data = []
+        url_test = url.replace("https://www.rottentomatoes.com/m/","")
+
+        if os.path.isfile("movies/" + url_test + ".csv"):
+            return 0
 
         while(aux != 0):
-            url_get = url +"/reviews/?page=" + str(aux)
+            url_get = url + "/reviews/?page=" + str(aux)
             print(url_get)
             html_doc = requests.get(url_get)
             soup = BeautifulSoup(html_doc.text, 'html.parser')
@@ -32,6 +37,7 @@ class ReviewScrapper:
                 element = [review_text.text.lstrip().rstrip(), result]
                 csv_data.append(element)
         self.create_csv(csv_data, url)
+        return 0
 
     def create_csv(self, csv_data, url):
         url = url.replace("https://www.rottentomatoes.com/m/","")
@@ -41,6 +47,8 @@ class ReviewScrapper:
             csvFile.close()
 
 if __name__ == "__main__":
-    url = 'https://www.rottentomatoes.com/m/captain_marvel'
-    test = ReviewScrapper()
-    test.get_page(url)
+    f = open("movies.txt", "r")
+    for i in f:
+        url = str(i.replace("\n",""))
+        reviews = ReviewScrapper()
+        reviews.get_page(url)
