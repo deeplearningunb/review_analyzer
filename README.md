@@ -79,6 +79,19 @@ Para importar os arquivos csv, é necessário fazer várias requisições. Para 
 cd import_to_kibana
 python3 import_csv.py nome_do_arquivo_csv index tipo_doc
 ```
+#### TF-IDF
+
+Analisar os dados é um parte importante no processo de treinar os modelo para isso fizemos um tf–idf (abreviação do inglês term frequency–inverse document frequency, que significa frequência do termo–inverso da frequência nos documentos) que é uma medida estatística que tem o intuito de indicar a importância de uma palavra dentro de uma review.
+
+A sua utilização é feita conforme o exemplo abaixo 
+
+```bash
+cd exploratory_data_analysis
+python3 tfidf.py nome_do_arquivo_csv
+```
+
+Ele irá retornar as palavras e o seu valor para os Fresh e os Rotten.
+
 ## Contribuidores
 
 Agradecimentos para essas pessoas maravilhosas ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
