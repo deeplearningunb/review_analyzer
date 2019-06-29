@@ -21,6 +21,8 @@ Primeiramente é necessário ter [Docker](https://docs.docker.com/install/) e o 
 
 Para o Web Scrapping e subir os dados no kibana pelo Elasticsearch, instale as dependências que se encontram no `requirements.txt`.
 
+E instalando os `requirements.txt` você também consegue rodar nossos exemplos de classificadores :)
+
 ### Rodando o Ambiente
 
 Para baixar 
@@ -39,6 +41,18 @@ docker-compose up
 ```
 
 Se tudo deu certo, já é possível utilizar o Kibana entrando no endereço `http://localhost:5601/`. Entrando nele, você verá a interface do Kibana. Acessando `http://localhost:9200/`, você terá acesso ao Elasticsearch.
+
+Para ter acesso aos nosso jupyter notebooks é necessário que você inicie o jupyter ou o jupyter-lab (ele tem modo dark para programar de madrugada :D ).
+
+Para o lab
+```bash
+jupyter lab
+```
+Para versão normal
+```bash
+jupyter-notebook
+```
+E após entre em `http://localhost:8888/` e pode começar a olhar nossos exemplos.
 
 ### Rodando nossas ferramentas
 
