@@ -9,8 +9,7 @@ Fique a vontade para contribuir para o repositório com mais exemplos seja de da
 
 ## Tecnologias
 
-<img src="https://www.tensorflow.org/images/tf_logo_social.png" alt="Tensorflow" height="100" width="200"/><img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="Python" height="100" width="110"/><img src="https://i0.wp.com/kubedex.com/wp-content/uploads/2018/09/kibana-1.png" alt="Kibana" height="100" width="110"/><img src="https://miro.medium.com/max/892/1*AYP0Mg_MwJMm3Kbx8Xa8lQ.png" alt="ElasticSearch" height="100" width="200"/><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" alt="Scikit" height="100" width="200"/>
-
+<img src="https://www.tensorflow.org/images/tf_logo_social.png" alt="Tensorflow" height="100" width="200"/><img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="Python" height="100" width="110"/><img src="https://i0.wp.com/kubedex.com/wp-content/uploads/2018/09/kibana-1.png" alt="Kibana" height="100" width="110"/><img src="https://miro.medium.com/max/892/1*AYP0Mg_MwJMm3Kbx8Xa8lQ.png" alt="ElasticSearch" height="100" width="200"/><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png" alt="Scikit" height="100" width="200"/><img src="https://www.mundodocker.com.br/wp-content/uploads/2015/06/docker_facebook_share.png" alt="Docker" height="100" width="110"/><img src="https://www.defcon-lab.org/wp-content/uploads/2018/01/github.png" alt="Github" height="100" width="110"/>
 ## Utilização
 
 ### Utilizando Online
@@ -20,6 +19,19 @@ Atualmente não temos um servidor com o nosso ambiente.
 Primeiramente é necessário ter [Docker](https://docs.docker.com/install/) e o [Docker-Compose](https://docs.docker.com/compose/install/). Com eles é possível subir a parte de visualização dos dados.
 
 Para o Web Scrapping e subir os dados no kibana pelo Elasticsearch, instale as dependências que se encontram no `requirements.txt`.
+
+Recomendamos que instale isso tudo dentro uma virtualenv ou faça um container você decide. Neste exemplo vamos instalar tudo dentro de uma virtualenv. Começando desde instalar uma virtualenv.
+
+```bash
+pip install virtualenv
+virtualenv review_analyzer
+```
+Agora temos uma virtualenv falta agora só falta ativar ela e instalar os requirements.txt nela.
+
+```bash
+source /caminho/para/review_analyzer/bin/activate
+pip install -r requirements.txt 
+```
 
 E instalando os `requirements.txt` você também consegue rodar nossos exemplos de classificadores :)
 
@@ -42,7 +54,7 @@ docker-compose up
 
 Se tudo deu certo, já é possível utilizar o Kibana entrando no endereço `http://localhost:5601/`. Entrando nele, você verá a interface do Kibana. Acessando `http://localhost:9200/`, você terá acesso ao Elasticsearch.
 
-Para ter acesso aos nosso jupyter notebooks é necessário que você inicie o jupyter ou o jupyter-lab (ele tem modo dark para programar de madrugada :D ).
+Para ter acesso aos nosso jupyter notebooks é necessário que você inicie o jupyter ou o jupyter-lab ele tem modo dark para programar de madrugada :D.
 
 Para o lab
 ```bash
