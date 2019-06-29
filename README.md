@@ -79,9 +79,9 @@ Para importar os arquivos csv é necessário fazer requests um monte de requests
 cd import_to_kibana
 python3 import_csv.py nome_do_arquivo_csv index tipo_doc
 ```
-## Contributors
+## Contribuidores
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Agradecimentos para essas pessoas maravilhosas ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
 <table>
