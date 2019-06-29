@@ -14,12 +14,12 @@ Fique a vontade para contribuir para o repositório com mais exemplos seja de da
 ## Utilização
 
 ### Utilizando Online
-Atualmente não temos um servido com o nosso ambiente.
+Atualmente não temos um servidor com o nosso ambiente.
 
 ### Instalando Localmente
 Primeiramente é necessário ter [Docker](https://docs.docker.com/install/) e o [Docker-Compose](https://docs.docker.com/compose/install/). Com eles é possível subir a parte de visualização dos dados.
 
-Para o Web Scrapping e subir os dados no kibana pelo elasticsearch instale os requirements.txt
+Para o Web Scrapping e subir os dados no kibana pelo Elasticsearch instale os requirements.txt
 
 ### Rodando o Ambiente
 
@@ -38,12 +38,12 @@ docker-compose build
 docker-compose up
 ```
 
-Se tudo deu certo já é possível utilizar o Kibana entrando no endereço `http://localhost:5601/` nele você verá a interface do Kibana. E acessando `http://localhost:9200/` tem acesso ao Elastic Search
+Se tudo deu certo, já é possível utilizar o Kibana entrando no endereço `http://localhost:5601/`. Entrando nele, você verá a interface do Kibana. Acessando `http://localhost:9200/`, você terá acesso ao Elasticsearch.
 
 ### Rodando nossas ferramentas
 
 #### Web Scrapping
-Para facilitar a analise de sentimento nos desenvolvemos algumas funções.
+Para facilitar a analise de sentimento, nós desenvolvemos algumas funções:
 
 O Web Scrapping de reviews de filmes foi criado usando as bibliotecas do Beautiful Soup e do request atualmente ela só suporta o `https://www.rottentomatoes.com/`. 
 
@@ -71,9 +71,9 @@ cd web_scrapping
 python3 get_review.py nome_do_arquivo_de_urls
 ```
 
-#### Comunicação Elastic Search
+#### Comunicação Elasticsearch
 
-Para importar os arquivos csv é necessário fazer requests um monte de requests para agilizar esse processo nós criamos uma função que faz isso para você. Só precisa passar os parâmetros e ela faz o resto.
+Para importar os arquivos csv, é necessário fazer várias requisições. Para agilizar esse processo, nós criamos uma função que faz isso para você. Só precisa passar os parâmetros e ela fará o resto.
 
 ```bash
 cd import_to_kibana
