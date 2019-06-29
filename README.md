@@ -100,7 +100,7 @@ Agradecimentos para essas pessoas maravilhosas ([emoji key](https://allcontribut
             <br /><a href="https://github.com/fga-eps-mds/2019.1-hubcare-docs/commits?author=mateusnr" title="Code">💻</a></td>
         <td align="center">
             <a href="https://github.com/Lorryaze"><img src="https://avatars1.githubusercontent.com/u/30262806?v=4" width="100px;" alt="Francisco Heronildo" />
-                <br /><sub><b>Lorrany Azevedo/b></sub></a>
+                <br /><sub><b>Lorrany Azevedo</b></sub></a>
             <br /><a href="https://github.com/fga-eps-mds/2019.1-hubcare-docs/commits?author=Lorryaze" title="Code">💻</a></td>
     </tr>
 </table>
