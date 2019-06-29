@@ -146,6 +146,8 @@ Agradecimentos para essas pessoas maravilhosas ([emoji key](https://allcontribut
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+Este projeto segue [all-contributors](https://github.com/all-contributors/all-contributors). Contribuições de todos os tipos são bem-vindas!
+
 ## License
 
 O nosso código e as ferramentas desenvolvidas pela equipe está dentro da [MIT License](./LICENSE), mas as ferramentas externas como o Kibana e o Elastic Search são Apache.
