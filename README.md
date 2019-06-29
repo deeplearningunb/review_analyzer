@@ -79,6 +79,33 @@ Para importar os arquivos csv é necessário fazer requests um monte de requests
 cd import_to_kibana
 python3 import_csv.py nome_do_arquivo_csv index tipo_doc
 ```
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://github.com/cjjcastro"><img src="https://avatars0.githubusercontent.com/u/26393787?v=4" width="100px;" alt="Cleber Júnior" />
+                <br /><sub><b>Cleber Júnior</b></sub></a>
+            <br /><a href="https://github.com/fga-eps-mds/2019.1-hubcare-docs/commits?author=cjjcastro" title="Code">💻</a></td>
+        <td align="center">
+            <a href="https://github.com/Hiroshi18"><img src="https://avatars0.githubusercontent.com/u/26282955?v=4" width="100px;" alt="Lucas Hiroshi Horinouchi" />
+                <br /><sub><b>Lucas Hiroshi Horinouchi</b></sub></a>
+            <br /><a href="https://github.com/fga-eps-mds/2019.1-hubcare-docs/commits?author=Hiroshi18" title="Code">💻</a> <a href="https://github.com/fga-eps-mds/2019.1-hubcare-docs/commits?author=Hiroshi18" title="Documentation">📖</a></td>
+        <td align="center">
+            <a href="https://github.com/mateusnr"><img src="https://avatars0.githubusercontent.com/u/13491922?v=4" width="100px;" alt="Mateus Nóbrega" />
+                <br /><sub><b>Mateus Nóbrega</b></sub></a>
+            <br /><a href="https://github.com/fga-eps-mds/2019.1-hubcare-docs/commits?author=mateusnr" title="Code">💻</a></td>
+        <td align="center">
+            <a href="https://github.com/Lorryaze"><img src="https://avatars1.githubusercontent.com/u/30262806?v=4" width="100px;" alt="Francisco Heronildo" />
+                <br /><sub><b>Lorrany Azevedo/b></sub></a>
+            <br /><a href="https://github.com/fga-eps-mds/2019.1-hubcare-docs/commits?author=Lorryaze" title="Code">💻</a></td>
+    </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## License
 
