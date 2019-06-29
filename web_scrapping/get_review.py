@@ -6,7 +6,7 @@ import sys
 
 class ReviewScrapper:
     
-    def get_page(self,url):
+    def get_page(self, url):
         aux = 1
         csv_data = []
         url_test = url.replace("https://www.rottentomatoes.com/m/", "")
