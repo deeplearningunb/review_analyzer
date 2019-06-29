@@ -13,5 +13,5 @@ assignees: ''
 
 **Escreva as alternativas que vc considera**
 
-**Contenxto adicional**
+**Contexto adicional**
 
