@@ -19,7 +19,7 @@ Atualmente não temos um servidor com o nosso ambiente.
 ### Instalando Localmente
 Primeiramente é necessário ter [Docker](https://docs.docker.com/install/) e o [Docker-Compose](https://docs.docker.com/compose/install/). Com eles é possível subir a parte de visualização dos dados.
 
-Para o Web Scrapping e subir os dados no kibana pelo Elasticsearch instale os requirements.txt
+Para o Web Scrapping e subir os dados no kibana pelo Elasticsearch, instale as dependências que se encontram no `requirements.txt`.
 
 ### Rodando o Ambiente
 
