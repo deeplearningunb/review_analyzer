@@ -20,20 +20,20 @@ Primeiramente é necessário ter [Docker](https://docs.docker.com/install/) e o 
 
 Para o Web Scrapping e subir os dados no kibana pelo Elasticsearch, instale as dependências que se encontram no `requirements.txt`.
 
-Recomendamos que instale isso tudo dentro uma virtualenv ou faça um container você decide. Neste exemplo vamos instalar tudo dentro de uma virtualenv. Começando desde instalar uma virtualenv.
+Recomendamos que instale todo o ambiente necessário para a execução da aplicação dentro uma virtualenv, ou faça um container, você decide. Neste exemplo vamos configurar o ambiente dentro de uma virtualenv. Começando a partir da instalção da virtualenv.
 
 ```bash
 pip install virtualenv
 virtualenv review_analyzer
 ```
-Agora temos uma virtualenv falta agora só falta ativar ela e instalar os requirements.txt nela.
+Agora temos uma virtualenv, vamos ativa-lá e instalar os requirements.txt.
 
 ```bash
 source /caminho/para/review_analyzer/bin/activate
 pip install -r requirements.txt 
 ```
 
-E instalando os `requirements.txt` você também consegue rodar nossos exemplos de classificadores :)
+Instalando os `requirements.txt` você também consegue rodar nossos exemplos de classificadores :)
 
 ### Rodando o Ambiente
 
@@ -54,7 +54,7 @@ docker-compose up
 
 Se tudo deu certo, já é possível utilizar o Kibana entrando no endereço `http://localhost:5601/`. Entrando nele, você verá a interface do Kibana. Acessando `http://localhost:9200/`, você terá acesso ao Elasticsearch.
 
-Para ter acesso aos nosso jupyter notebooks é necessário que você inicie o jupyter ou o jupyter-lab ele tem modo dark para programar de madrugada :D.
+Para ter acesso aos nossos jupyter notebooks é necessário que você inicie o jupyter-notebook ou o jupyter-lab, ele tem modo dark para programar de madrugada :D.
 
 Para o lab
 ```bash
@@ -69,11 +69,11 @@ E após entre em `http://localhost:8888/` e pode começar a olhar nossos exemplo
 ### Rodando nossas ferramentas
 
 #### Web Scrapping
-Para facilitar a analise de sentimento, nós desenvolvemos algumas funções:
+Para facilitar a análise de sentimentos, nós desenvolvemos algumas funções:
 
-O Web Scrapping de reviews de filmes foi criado usando as bibliotecas do Beautiful Soup e do request atualmente ela só suporta o `https://www.rottentomatoes.com/`. 
+O Web Scrapping de reviews de filmes foi criado usando as bibliotecas do Beautiful Soup e do request, atualmente ela só suporta o `https://www.rottentomatoes.com/`. 
 
-Para utilizar é necessário criar um arquivo de urls.
+Para utilizar é necessário criar um arquivo de urls da seguinte forma:
 
 ```bash
 cd web_scrapping
@@ -81,7 +81,7 @@ touch nome_do_arquivo_de_urls
 vim nome_do_arquivo_de_urls
 ```
 
-Dentro do arquivo escreva o nome das urls que você quer que seja feito a extração das reviews. Como no exemplo abaixo
+Dentro do arquivo escreva o nome das urls que você quer que seja feito a extração das reviews. Como no exemplo abaixo:
 
 ```
 https://www.rottentomatoes.com/m/black_panther_2018
@@ -99,7 +99,7 @@ python3 get_review.py nome_do_arquivo_de_urls
 
 #### Comunicação Elasticsearch
 
-Para importar os arquivos csv, é necessário fazer várias requisições. Para agilizar esse processo, nós criamos uma função que faz isso para você. Só precisa passar os parâmetros e ela fará o resto.
+Para importar os arquivos csv, é necessário fazer várias requisições. Para agilizar esse processo, nós criamos uma função que faz isso para você, você só precisa passar os parâmetros e ela fará todo o resto.
 
 ```bash
 cd import_to_kibana
@@ -107,16 +107,16 @@ python3 import_csv.py nome_do_arquivo_csv index tipo_doc
 ```
 #### TF-IDF
 
-Analisar os dados é um parte importante no processo de treinar os modelo para isso fizemos um tf–idf (abreviação do inglês term frequency–inverse document frequency, que significa frequência do termo–inverso da frequência nos documentos) que é uma medida estatística que tem o intuito de indicar a importância de uma palavra dentro de uma review.
+Analisar os dados é um parte importante no processo de treinar os modelos, para isso fizemos um tf–idf (abreviação do inglês term frequency–inverse document frequency, que significa frequência do termo–inverso da frequência nos documentos), que é uma medida estatística que tem o intuito de indicar a importância de uma palavra dentro de uma review.
 
-A sua utilização é feita conforme o exemplo abaixo 
+A sua utilização é feita conforme o exemplo abaixo:
 
 ```bash
 cd exploratory_data_analysis
 python3 tfidf.py nome_do_arquivo_csv
 ```
 
-Ele irá retornar as palavras e o seu valor para os Fresh e os Rotten.
+Ele irá retornar as palavras e o seu valor para os Fresh e os Rotten, estes são os parâmetros que avaliam se a review foi classificada como positiva ou negativa.
 
 ## Contribuidores
 
@@ -150,4 +150,4 @@ Este projeto segue [all-contributors](https://github.com/all-contributors/all-co
 
 ## License
 
-O nosso código e as ferramentas desenvolvidas pela equipe está dentro da [MIT License](./LICENSE), mas as ferramentas externas como o Kibana e o Elastic Search são Apache.
+O nosso código e as ferramentas desenvolvidas pela equipe estão dentro da [MIT License](./LICENSE), mas as ferramentas externas como o Kibana e o Elastic Search são Apache.
