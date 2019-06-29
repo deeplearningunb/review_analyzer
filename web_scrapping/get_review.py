@@ -2,13 +2,14 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 import os
+import sys
 
 class ReviewScrapper:
     
     def get_page(self,url):
         aux = 1
         csv_data = []
-        url_test = url.replace("https://www.rottentomatoes.com/m/","")
+        url_test = url.replace("https://www.rottentomatoes.com/m/", "")
 
         if os.path.isfile("movies/" + url_test + ".csv"):
             return 0
@@ -47,8 +48,9 @@ class ReviewScrapper:
             csvFile.close()
 
 if __name__ == "__main__":
-    f = open("movies.txt", "r")
+    filename = sys.argv[1]
+    f = open(filename, "r")
     for i in f:
-        url = str(i.replace("\n",""))
+        url = str(i.replace("\n", ""))
         reviews = ReviewScrapper()
         reviews.get_page(url)
