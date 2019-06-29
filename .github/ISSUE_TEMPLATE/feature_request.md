@@ -11,7 +11,7 @@ assignees: ''
 
 **Descreva a solução que vc gostaria**
 
-**escreva as alternativas que vc considera**
+**Escreva as alternativas que vc considera**
 
 **Contenxto adicional**
 
