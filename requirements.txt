@@ -6,7 +6,7 @@ idna==2.8
 pep8==1.7.1
 requests==2.22.0
 soupsieve==1.9.1
-urllib3==1.25.3
+urllib3==1.26.5
 jupyter==1.0.0
 jupyter-client==5.2.3
 jupyter-console==6.0.0
